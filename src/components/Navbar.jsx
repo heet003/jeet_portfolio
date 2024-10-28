@@ -19,7 +19,7 @@ const Navbar = () => {
           About
         </a>
         <a
-          href="#contact"
+          href="/contact"
           className="nav_links"
         >
           Contact
