@@ -1,0 +1,28 @@
+/* eslint-disable*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxanium", sans-serif;
+}
+
+.nav_links {
+  color: #1f2937;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav_links:hover {
+  color: #2563eb;
+}
+
+/* https://www.livemint.com/lm-img/img/2024/08/27/1600x900/drone_cameras_1724750168143_1724750168466.jpg
+
+https://www.york.ac.uk/media/study/courses/undergraduate/electronics/Yellow-circuit-EE-crop1200.jpg
+
+https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/14202/production/_108243428_gettyimages-871148930.jpg
+
+*/
