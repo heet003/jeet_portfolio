@@ -35,7 +35,7 @@ function HomePage() {
           perspiciatis omnis, inventore, ex nesciunt itaque. Quae eum alias
           facilis earum ipsum.
         </motion.p>
-        <a href="/" className="text-blue-500 underline my-5">
+        <a href="/projects" className="text-blue-500 underline my-5">
           All Projects
         </a>
       </div>
