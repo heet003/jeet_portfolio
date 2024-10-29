@@ -1,5 +1,7 @@
 /* eslint-disable */
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeInSlowly, fadeIn } from "../utils/motion";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,13 +9,30 @@ const Footer = () => {
   const facebook_link = import.meta.env.VITE_APP_FACEBOOK;
   const twitter_link = import.meta.env.VITE_APP_TWITTER;
   const linkedin_link = import.meta.env.VITE_APP_LINKEDIN;
+
   return (
-    <footer className=" mt-10">
+    <motion.footer
+      className="mt-10"
+      initial="hidden"
+      whileInView="show"
+      variants={fadeInSlowly(0.2, 1.5)}
+    >
       <hr className="w-[90%] border-t-1 border-black m-auto" />
 
-      <h2 className="text-3xl font-bold text-center py-6">VAYU VIKRANT</h2>
+      <motion.h2
+        className="text-3xl font-bold text-center py-6"
+        variants={fadeIn("up", "spring", 0.3, 1)}
+      >
+        VAYU VIKRANT
+      </motion.h2>
+
       <div className="container mx-auto py-6 flex flex-col items-center md:flex-row md:justify-between px-[4rem]">
-        <div className="flex flex-col items-center md:items-start space-y-4 mb-4">
+        <motion.div
+          className="flex flex-col items-center md:items-start space-y-4 mb-4"
+          initial="hidden"
+          whileInView="show"
+          variants={fadeIn("left", "spring", 0.5, 1)}
+        >
           <a
             href="/projects"
             className="text-gray-700 hover:text-blue-600 transition duration-200"
@@ -32,8 +51,14 @@ const Footer = () => {
           >
             About
           </a>
-        </div>
-        <div className="flex flex-col items-center md:items-end space-y-4 mb-4">
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center md:items-end space-y-4 mb-4"
+          initial="hidden"
+          whileInView="show"
+          variants={fadeIn("right", "spring", 0.5, 1)}
+        >
           <a
             href={instagram_link}
             className="text-gray-700 hover:text-blue-600 transition duration-200"
@@ -52,13 +77,19 @@ const Footer = () => {
           >
             Twitter
           </a>
-        </div>
+        </motion.div>
       </div>
+
       <hr className="w-[90%] border-t-1 border-black m-auto" />
-      <p className="text-gray-500 text-center mt-6 mb-4">
+      <motion.p
+        className="text-gray-500 text-center mt-6 mb-4"
+        initial="hidden"
+        whileInView="show"
+        variants={fadeInSlowly(0.7, 1.5)}
+      >
         &copy; {currentYear} by Jeet Sadaria.
-      </p>
-    </footer>
+      </motion.p>
+    </motion.footer>
   );
 };
 

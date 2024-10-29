@@ -5,7 +5,12 @@ import { fadeInSlowly, slideIn } from "../utils/motion";
 
 function HomePage() {
   return (
-    <main className="relative flex flex-col items-start justify-center px-6 min-h-screen">
+    <motion.main
+      className="relative flex flex-col items-start justify-center px-6 min-h-screen"
+      initial="hidden"
+      animate="show"
+      variants={fadeInSlowly(0.3, 1)}
+    >
       <section className="relative w-full">
         <h1 className="text-7xl font-semibold text-gray-700 mt-9">
           Vayu Vikrant
@@ -91,7 +96,7 @@ function HomePage() {
           />
         </div>
       </section>
-    </main>
+    </motion.main>
   );
 }
 

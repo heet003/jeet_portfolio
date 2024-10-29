@@ -2,6 +2,8 @@
 import React from "react";
 import { facebook, instagram, twitter, linkedin } from "../assets";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { fadeInSlowly } from "../utils/motion";
 
 const About = () => {
   const profile = import.meta.env.VITE_APP_PROFILE_IMG;
@@ -12,7 +14,12 @@ const About = () => {
 
   return (
     <React.Fragment>
-      <div className="flex min-h-screen relative">
+      <motion.div
+        className="flex min-h-screen relative"
+        initial="hidden"
+        animate="show"
+        variants={fadeInSlowly(0, 1.5)}
+      >
         <div className="w-[33%] about-section absolute top-0 left-0 h-full"></div>
 
         <div className="relative flex w-full justify-center items-center z-10">
@@ -95,7 +102,7 @@ const About = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </React.Fragment>
   );
 };

@@ -1,9 +1,16 @@
 /* eslint-disable */
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeInSlowly } from "../utils/motion";
 
 const Contact = () => {
   return (
-    <section className="min-h-screen ">
+    <motion.section
+      className="min-h-screen"
+      initial="hidden"
+      animate="show"
+      variants={fadeInSlowly(0, 1.5)}
+    >
       <div className=" rounded-lg p-8 max-w-3xl w-full">
         <h2 className="text-8xl text-gray-700 mb-10 font-light text-left mt-10">
           Contact Me
@@ -36,7 +43,7 @@ const Contact = () => {
           className="my-20"
         />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

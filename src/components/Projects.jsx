@@ -2,10 +2,17 @@
 import React from "react";
 import { projects } from "../utils/constants";
 import ProjectCard from "./ProjectCard";
+import { motion } from "framer-motion";
+import { fadeInSlowly } from "../utils/motion";
 
 function Projects() {
   return (
-    <div className="flex flex-col items-center p-10 mt-10 space-y-8">
+    <motion.div
+      className="flex flex-col items-center p-10 mt-10 space-y-8"
+      initial="hidden"
+      animate="show"
+      variants={fadeInSlowly(0, 1.5)}
+    >
       <h1 className="text-4xl font-bold text-center text-gray-800">
         <span className="bg-[#2563EB] px-[0.1rem] m-2"></span>Projects
       </h1>
@@ -27,7 +34,7 @@ function Projects() {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

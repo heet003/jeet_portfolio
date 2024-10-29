@@ -1,10 +1,17 @@
-/* eslint-disable*/
+/* eslint-disable */
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { fadeInSlowly } from "../utils/motion";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center py-6 px-8 bg-white">
+    <motion.nav
+      className="flex justify-between items-center py-6 px-8 bg-white"
+      initial="hidden"
+      animate="show"
+      variants={fadeInSlowly(0.3, 1)}
+    >
       <div className="text-2xl font-semibold text-gray-800">
         <Link to={`/`}>Jeet Sadaria</Link>
       </div>
@@ -19,7 +26,7 @@ const Navbar = () => {
           Contact
         </a>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
