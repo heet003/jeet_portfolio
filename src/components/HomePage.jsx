@@ -42,7 +42,7 @@ function HomePage() {
       <section className="mt-12 grid grid-cols-2 gap-0 m-auto p-0">
         <div className="col-span-1">
           <motion.img
-            src="https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk="
+            src="https://media.istockphoto.com/id/911190112/photo/quadcopter-drone-with-4k-video-camera-flying-in-the-air.jpg?s=2048x2048&w=is&k=20&c=4FkoHruSlP9bcggRixWv0AzH1k5ybLu1b3PXy6HoupM="
             alt="Drone Camera"
             className="w-full h-auto object-cover"
             initial="hidden"
@@ -52,7 +52,7 @@ function HomePage() {
         </div>
         <div className="col-span-1">
           <motion.img
-            src="https://static9.depositphotos.com/1000276/1100/i/450/depositphotos_11008977-stock-photo-mountain-magic-landscape.jpg"
+            src="https://media.istockphoto.com/id/478200246/photo/isolated-flying-phantom-drone.jpg?s=2048x2048&w=is&k=20&c=91wlwPZ1XZ6N8vSHQ_nroi8PNwMShHDGlqsGG0wjisc="
             alt="Technology"
             className="w-full h-auto object-cover"
             initial="hidden"
@@ -62,7 +62,7 @@ function HomePage() {
         </div>
         <div className="col-span-2">
           <motion.img
-            src="https://static5.depositphotos.com/1038117/477/i/450/depositphotos_4776743-stock-photo-waterfall-in-deep-forest.jpg"
+            src="https://media.istockphoto.com/id/951069666/photo/unmanned-military-drone-on-patrol-air-territory-at-high-altitude.jpg?s=2048x2048&w=is&k=20&c=6qtIMZ60AY6R7NFBQgIYKcKf3IHHgi8TbgbfVOPG530="
             alt="Circuit Board"
             className="w-full h-auto object-cover"
             initial="hidden"
@@ -72,7 +72,7 @@ function HomePage() {
         </div>
         <div className="col-span-1">
           <motion.img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbpdV5eKcBMzjs7ltDev4YxvWvnNxcFk7wUg&s"
+            src="https://media.istockphoto.com/id/935726026/photo/farmer-spraying-his-crops-using-a-drone.jpg?s=2048x2048&w=is&k=20&c=fY4Pvk-10Vd0MfduAU36215prwxNGlF0cN5qz2lBBsc="
             alt="Drone"
             className="w-full h-auto object-cover"
             initial="hidden"
@@ -82,7 +82,7 @@ function HomePage() {
         </div>
         <div className="col-span-1">
           <motion.img
-            src="https://i0.wp.com/picjumbo.com/wp-content/uploads/kirkjufell-mountain-free-image.jpg?w=600&quality=80"
+            src="https://images.pexels.com/photos/2050718/pexels-photo-2050718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Circuit Board"
             className="w-full h-auto object-cover"
             initial="hidden"

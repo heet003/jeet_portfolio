@@ -3,6 +3,25 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-muted-blue: #E0E7FF;
+  --bg-light-grey: #F8FAFC;
+  --bg-cream: #FFF8E6;
+}
+
+.about-container {
+  background-color: var(--bg-cream);
+}
+
+
+.about-section {
+  background: linear-gradient(
+    to top left,
+    var(--bg-muted-blue) 20%,
+    var(--bg-light-grey) 80%
+  );
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -18,6 +37,7 @@ body {
 .nav_links:hover {
   color: #2563eb;
 }
+
 
 /* https://www.livemint.com/lm-img/img/2024/08/27/1600x900/drone_cameras_1724750168143_1724750168466.jpg
 

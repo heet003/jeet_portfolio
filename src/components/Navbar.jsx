@@ -7,13 +7,13 @@ const Navbar = () => {
       <div className="text-2xl font-semibold text-gray-800">Jeet Sadaria</div>
       <div className="flex space-x-8">
         <a
-          href="#projects"
+          href="/projects"
           className="nav_links text-bl"
         >
           Projects
         </a>
         <a
-          href="#about"
+          href="/about"
           className="nav_links"
         >
           About

@@ -38,10 +38,10 @@ const Footer = () => {
             Instagram
           </a>
           <a
-            href="https://behance.net"
+            href="https://linkedin.net"
             className="text-gray-700 hover:text-blue-600 transition duration-200"
           >
-            Behance
+            Linked In
           </a>
           <a
             href="https://pinterest.com"
