@@ -3,7 +3,10 @@ import React from "react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
+  const instagram_link = import.meta.env.VITE_APP_INSTAGRAM;
+  const facebook_link = import.meta.env.VITE_APP_FACEBOOK;
+  const twitter_link = import.meta.env.VITE_APP_TWITTER;
+  const linkedin_link = import.meta.env.VITE_APP_LINKEDIN;
   return (
     <footer className=" mt-10">
       <hr className="w-[90%] border-t-1 border-black m-auto" />
@@ -12,42 +15,42 @@ const Footer = () => {
       <div className="container mx-auto py-6 flex flex-col items-center md:flex-row md:justify-between px-[4rem]">
         <div className="flex flex-col items-center md:items-start space-y-4 mb-4">
           <a
-            href="#portfolio"
+            href="/projects"
             className="text-gray-700 hover:text-blue-600 transition duration-200"
           >
-            Portfolio
+            Projects
           </a>
           <a
-            href="#about"
-            className="text-gray-700 hover:text-blue-600 transition duration-200"
-          >
-            About
-          </a>
-          <a
-            href="#contact"
+            href="/contact"
             className="text-gray-700 hover:text-blue-600 transition duration-200"
           >
             Contact
           </a>
+          <a
+            href="/about"
+            className="text-gray-700 hover:text-blue-600 transition duration-200"
+          >
+            About
+          </a>
         </div>
         <div className="flex flex-col items-center md:items-end space-y-4 mb-4">
           <a
-            href="https://instagram.com"
+            href={instagram_link}
             className="text-gray-700 hover:text-blue-600 transition duration-200"
           >
             Instagram
           </a>
           <a
-            href="https://linkedin.net"
+            href={linkedin_link}
             className="text-gray-700 hover:text-blue-600 transition duration-200"
           >
             Linked In
           </a>
           <a
-            href="https://pinterest.com"
+            href={twitter_link}
             className="text-gray-700 hover:text-blue-600 transition duration-200"
           >
-            Pinterest
+            Twitter
           </a>
         </div>
       </div>

@@ -4,6 +4,12 @@ import { facebook, instagram, twitter, linkedin } from "../assets";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const profile = import.meta.env.VITE_APP_PROFILE_IMG;
+  const instagram_link = import.meta.env.VITE_APP_INSTAGRAM;
+  const facebook_link = import.meta.env.VITE_APP_FACEBOOK;
+  const twitter_link = import.meta.env.VITE_APP_TWITTER;
+  const linkedin_link = import.meta.env.VITE_APP_LINKEDIN;
+
   return (
     <React.Fragment>
       <div className="flex min-h-screen relative">
@@ -14,7 +20,7 @@ const About = () => {
             <div className=" about-container px-[3rem] py-[1.5rem]">
               <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                 <img
-                  src="https://t4.ftcdn.net/jpg/01/33/03/89/360_F_133038922_PucwWmlsp2YDuyxi2NPTDw65cpdJALlP.webp"
+                  src={profile}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
@@ -28,34 +34,28 @@ const About = () => {
               </p>
             </div>
             <div className="flex flex-row space-x-4 p-2">
-              <a>
+              <a href={facebook_link} target="_blank">
                 <img
                   src={facebook}
                   className="w-[20px] h-fit cursor-pointer"
                   alt="Facebook"
                 />
               </a>
-              <a
-                href="https://www.instagram.com/jeet_sadaria_3974/?utm_source=ig_web_button_share_sheet"
-                target="_blank"
-              >
+              <a href={instagram_link} target="_blank">
                 <img
                   src={instagram}
                   className="w-[20px] h-fit cursor-pointer"
                   alt="Instagram"
                 />
               </a>
-              <a>
+              <a href={twitter_link} target="_blank">
                 <img
                   src={twitter}
                   className="w-[20px] h-fit cursor-pointer"
                   alt="Twitter"
                 />
               </a>
-              <a
-                href="https://www.linkedin.com/in/jeet-sadaria-79674b26a/"
-                target="_blank"
-              >
+              <a href={linkedin_link} target="_blank">
                 <img
                   src={linkedin}
                   className="w-[20px] h-fit cursor-pointer"
