@@ -28,11 +28,11 @@ function HomePage() {
         />
       </section>
 
-      <div className="mt-12 p-4 w-full md:w-[50%] text-gray-600 text-lg md:text-xl">
+      <div className="mt-12 w-full md:w-[50%] text-gray-600 text-lg md:text-xl">
         <motion.p
           initial="hidden"
           whileInView="show"
-          variants={slideIn("left", "tween", 0.3, 0.5)}
+          variants={slideIn("left", "tween", 0.2, 0.5)}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim amet
           quaerat, sit in non ab, quam animi rem earum est minima quae quo
@@ -41,7 +41,7 @@ function HomePage() {
           perspiciatis omnis, inventore, ex nesciunt itaque. Quae eum alias
           facilis earum ipsum.
         </motion.p>
-        <a href="/projects" className="text-blue-500 underline my-5">
+        <a href="/projects" className="underline py-10">
           All Projects
         </a>
       </div>

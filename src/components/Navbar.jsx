@@ -19,7 +19,7 @@ const Navbar = () => {
       variants={fadeInSlowly(0.3, 1)}
     >
       {/* Logo / Title */}
-      <div className="text-xl md:text-2xl font-semibold text-gray-800">
+      <div className="text-xl md:text-3xl font-semibold text-gray-800">
         <Link to="/">Jeet Sadaria</Link>
       </div>
 
