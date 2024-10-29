@@ -85,7 +85,7 @@ const Footer = () => {
         className="text-gray-500 text-center mt-6 mb-4"
         initial="hidden"
         whileInView="show"
-        variants={fadeInSlowly(0.7, 1.5)}
+        variants={fadeInSlowly(0.3, 1)}
       >
         &copy; {currentYear} by Jeet Sadaria.
       </motion.p>

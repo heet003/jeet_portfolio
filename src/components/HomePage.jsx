@@ -12,10 +12,10 @@ function HomePage() {
       variants={fadeInSlowly(0.3, 1)}
     >
       <section className="relative w-full">
-        <h1 className="text-7xl font-semibold text-gray-700 mt-9">
+        <h1 className="text-5xl md:text-7xl font-semibold text-gray-700 mt-9">
           Vayu Vikrant
         </h1>
-        <p className="absolute bottom-0 text-right right-0 w-[70%] text-8xl text-gray-700 font-extralight">
+        <p className="absolute bottom-0 text-right right-0 w-full md:w-[70%] text-5xl md:text-7xl lg:text-8xl text-gray-700 font-extralight">
           Strategy, Design and Everything in Between
         </p>
         <motion.img
@@ -27,7 +27,8 @@ function HomePage() {
           variants={fadeInSlowly(0.3, 1)}
         />
       </section>
-      <div className="mt-12 p-4 w-[50%] text-gray-600 text-lg">
+
+      <div className="mt-12 p-4 w-full md:w-[50%] text-gray-600 text-lg md:text-xl">
         <motion.p
           initial="hidden"
           whileInView="show"
@@ -44,7 +45,8 @@ function HomePage() {
           All Projects
         </a>
       </div>
-      <section className="mt-12 grid grid-cols-2 gap-0 m-auto p-0">
+
+      <section className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
         <div className="col-span-1">
           <motion.img
             src="https://media.istockphoto.com/id/911190112/photo/quadcopter-drone-with-4k-video-camera-flying-in-the-air.jpg?s=2048x2048&w=is&k=20&c=4FkoHruSlP9bcggRixWv0AzH1k5ybLu1b3PXy6HoupM="
@@ -65,7 +67,7 @@ function HomePage() {
             variants={fadeInSlowly(0.3, 1)}
           />
         </div>
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2 lg:col-span-1">
           <motion.img
             src="https://media.istockphoto.com/id/951069666/photo/unmanned-military-drone-on-patrol-air-territory-at-high-altitude.jpg?s=2048x2048&w=is&k=20&c=6qtIMZ60AY6R7NFBQgIYKcKf3IHHgi8TbgbfVOPG530="
             alt="Circuit Board"
