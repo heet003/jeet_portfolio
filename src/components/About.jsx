@@ -5,11 +5,9 @@ import { facebook, instagram, twitter, linkedin } from "../assets";
 const About = () => {
   return (
     <React.Fragment>
-      {/* Background */}
       <div className="flex min-h-screen relative">
         <div className="w-[33%] about-section absolute top-0 left-0 h-full"></div>
 
-        {/* Profile Card */}
         <div className="relative flex w-full justify-center items-center z-10">
           <div className="rounded-sm shadow-xl flex flex-col items-center max-w-sm bg-white ">
             <div className=" about-container px-[3rem] py-[1.5rem]">
